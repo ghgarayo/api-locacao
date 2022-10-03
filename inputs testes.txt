@@ -1,0 +1,207 @@
+Cadastro de Locatario - https://localhost:7027/locatario/cadastrar
+
+{
+  "nome": "Tadeu",
+  "email": "tadeu@email.com",
+  "password": "34312341"
+}
+
+{
+  "nome": "Marcos",
+  "email": "marcos@email.com",
+  "password": "641563241"
+}
+
+{
+  "nome": "Alex",
+  "email": "alex@email.com",
+  "password": "457436842"
+}
+
+{
+  "nome": "Jango",
+  "email": "jango@email.com",
+  "password": "1332454fs"
+}
+
+
+Cadastro de Imoveis - https://localhost:7027/imovel/cadastrar
+
+{
+    "endereco": "União da Vitoria",
+    "numero": "84",
+    "complemento": "Sobrado 3",
+    "bairro": "Barreirinha",
+    "cidade": "Curitiba",
+    "uf": "PR",
+    "proprietario": "Gustavo",
+    "valorAluguel": "3000.00"
+}
+
+{
+    "endereco": "Pedro Moreira Cardoso",
+    "numero": "150",
+    "complemento": "Bloco C Apto 5",
+    "bairro": "Xaxim",
+    "cidade": "Curitiba",
+    "uf": "PR",
+    "proprietario": "Carol",
+    "valorAluguel": "1000.00"
+}
+
+{
+    "endereco": "Doutor Arielly Soares da Silva",
+    "numero": "72",
+    "complemento": "Sobrado 3",
+    "bairro": "Boqueirao",
+    "cidade": "Curitiba",
+    "uf": "PR",
+    "proprietario": "Antonio",
+    "valorAluguel": "1500.00"
+}
+
+{
+    "endereco": "Doutor Arielly Soares da Silva",
+    "numero": "72",
+    "complemento": "Sobrado 4",
+    "bairro": "Boqueirao",
+    "cidade": "Curitiba",
+    "uf": "PR",
+    "proprietario": "Antonio",
+    "valorAluguel": "1500.00"
+}
+
+{
+    "endereco": "Doutor Arielly Soares da Silva",
+    "numero": "72",
+    "complemento": "Sobrado 5",
+    "bairro": "Boqueirao",
+    "cidade": "Curitiba",
+    "uf": "PR",
+    "proprietario": "Antonio",
+    "valorAluguel": "1500.00"
+}
+
+{
+    "endereco": "Vicente Machado",
+    "numero": "1050",
+    "complemento": " ",
+    "bairro": "Centro",
+    "cidade": "Curitiba",
+    "uf": "PR",
+    "proprietario": "Mateus",
+    "valorAluguel": "8300.00"
+}
+
+Cadastro Locação - https://localhost:7027/locacao/cadastrar
+
+{
+  "idImovel" : [VERFICAR APÓS CADASTRO DE IMOVEL],
+  "emailLocatario" : "marcos@email.com",
+  "dataLocacao" : "01/10/2022",
+  "tempoContrato": "36"
+}
+
+{
+  "idImovel" : [VERFICAR APÓS CADASTRO DE IMOVEL],
+  "emailLocatario" : "tadeu@email.com",
+  "dataLocacao" : "01/11/2022",
+  "tempoContrato": "12"
+}
+
+{
+  "idImovel" : [VERFICAR APÓS CADASTRO DE IMOVEL],
+  "emailLocatario" : "alex@email.com",
+  "dataLocacao" : "01/12/2022",
+  "tempoContrato": "24"
+}
+
+{
+  "idImovel" : [VERFICAR APÓS CADASTRO DE IMOVEL], 
+  "emailLocatario" : "alex@email.com",
+  "dataLocacao" : "01/12/2022",
+  "tempoContrato": "48"
+}
+
+{
+  "idImovel" : [VERFICAR APÓS CADASTRO DE IMOVEL],
+  "emailLocatario" : "alex@email.com",
+  "dataLocacao" : "01/12/2022",
+  "tempoContrato": "30"
+}
+
+
+READ:
+
+- GET locatarios: 
+https://localhost:7027/locatario/lista
+https://localhost:7027/locatario/buscar/tadeu@email.com
+
+- GET imoveis
+https://localhost:7027/imovel/lista
+https://localhost:7027/imovel/buscar/Antonio
+
+- GET locacoes
+https://localhost:7027/locacao/lista
+
+- GET locacao por ID locacao
+https://localhost:7027/locacao/buscar1/[VERIFICAR ID DE LOCACÃO]
+
+- GET locacao por ID locatario
+https://localhost:7027/locacao/buscar2/[VERIFICAR ID DE LOCATARIO]
+
+- GET locacao por ID imovel
+https://localhost:7027/locacao/buscar3/[VERIFICAR ID DE IMOVEL]
+
+UPDATE de nome ou email do locatario no banco de dados - https://localhost:7027/locatario/atualiza/dados
+
+{
+  "email" : "marcos@email.com",
+  "novoNome": "Relampago Marquinhos"
+}
+
+{
+  "email" : "tadeu@email.com",
+  "novoEmail": "tadeuzinho@email.com"
+}
+
+UPDATE de senha do locatario no banco de dados - https://localhost:7027/locatario/atualiza/senha
+
+{
+  "email" : "marcos@email.com",
+  "novaSenha": "64564645"
+}
+
+UPDATE de valor de aluguel ou novo proprietario do imóvel -  https://localhost:7027/imovel/atualiza/dados
+
+{
+  "idImovel" : [VERIFICAR ID DE IMOVEL],
+  "novoProprietario" : "Eduardo"
+}
+
+{
+  "idImovel" : [VERIFICAR ID DE IMOVEL],
+  "novoAluguel" : "1900.00"
+}
+
+UPDATE de tempo de locação e atualização da data de vigência - https://localhost:7027/locacao/atualiza/tempocontrato
+
+{
+  "idLocacao" : [VERIFICAR ID DE LOCACÃO],
+  "tempoContrato": "72",
+  "novaDataContrato": "01/10/2025"
+}
+
+DELETE: 
+
+DELETE locatario por email: https://localhost:7027/locatario/excluir/jango@email.com
+
+DELETE imovel por ID do imovel: https://localhost:7027/imovel/excluir/[VERIFICAR ID DE IMOVEL]
+
+DELETE locacao por ID do locacao: https://localhost:7027/imovel/excluir/[VERIFICAR ID DE LOCACÃO]
+
+LIMPA banco locatario - https://localhost:7027/locatario/limparbanco
+
+LIMPA banco imoveis - https://localhost:7027/imovel/limparbanco
+
+LIMPA banco locacoes - https://localhost:7027/locacao/limparbanco

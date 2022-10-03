@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "nKBZJCiQLfgp0Llq9FSbRFDcGcLSGKpCwdIgtUeUpYCPDdl9BXwB8scq1hqcaJd2rU49g6aJtbt8C59fMo+Hdw==",
+  "success": true,
+  "projectFilePath": "E:\\Portfolio GitHub\\SistemaLocacao\\SistemaLocacao.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
