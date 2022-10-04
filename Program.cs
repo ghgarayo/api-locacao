@@ -18,17 +18,24 @@ namespace SistemaLocacao
 
 
         record ChavesLocatario(string nome, string email, string password);
+        
         record ChavesImovel(string endereco, string numero, string complemento, string bairro,
                             string cidade, string uf, string proprietario, string valorAluguel);
+        
         record ChavesLocacao(long id, long idImovel, string emailLocatario, string dataLocacao, string tempoContrato);
+        
         record ChavesAtualizaLocatario(string email, string novoNome, string novoEmail);
+        
         record ChavesAtualizaSenhaLocatario(string email, string novaSenha);
+       
         record ChavesAtualizaImovel(long idImovel, string novoProprietario, string novoAluguel);
+       
         record ChavesAtualizaLocacao(long idLocacao, string tempoContrato, string novaDataContrato);
-
-
+        
         static BaseLocatarios baseLocatarios = new BaseLocatarios("bancoLocatarios.txt");
+        
         static BaseImoveis baseImoveis = new BaseImoveis("bancoImoveis.txt");
+        
         static BaseLocacao baseLocacoes = new BaseLocacao("bancoLocacoes.txt");
 
         static void Main(string[] args)
