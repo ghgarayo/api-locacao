@@ -7,10 +7,8 @@ namespace SistemaLocacao
     {
 
         /*
-    
-        Para iniciar o projeto, digite no console "dotnet watch run" 
         
-        Para efetuar os tester, você precisará instalar o Thunder Client para poder
+        Para efetuar os testes, você precisará instalar o Thunder Client para poder
         enviar as informações e ter um retorno do sistema       
         
         No arquivo "inputs testes.txt" você encontrará as URLs que deverão ser utilizadas
