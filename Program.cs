@@ -171,13 +171,15 @@ namespace SistemaLocacao
                 string auxNome = "";
                 string auxEmail = "";
                 Locatario encontraLocatario = baseLocatarios.BuscarPorEmail(cal.email);
-
-                if (cal.novoEmail != null)
+                                
+                if (cal.novoEmail != null && cal.novoNome != null)
                 {
                     auxEmail = encontraLocatario.GetEmail();
                     encontraLocatario.SetEmail(cal.novoEmail);
+                    auxNome = encontraLocatario.GetNome();
+                    encontraLocatario.SetNome(cal.novoNome);
                     baseLocatarios.SalvarNoArquivo();
-                    return $"Email alterado de {auxEmail} para {cal.novoEmail}.";
+                    return $"Nome alterado de {auxNome} para {cal.novoNome}.\nEmail alterado de {auxEmail} para {cal.novoEmail}.";
                 }
                 else if (cal.novoNome != null)
                 {
@@ -185,6 +187,13 @@ namespace SistemaLocacao
                     encontraLocatario.SetNome(cal.novoNome);
                     baseLocatarios.SalvarNoArquivo();
                     return $"Nome alterado de {auxNome} para {cal.novoNome}.";
+                }
+                else if (cal.novoEmail != null)
+                {
+                    auxEmail = encontraLocatario.GetEmail();
+                    encontraLocatario.SetEmail(cal.novoEmail);
+                    baseLocatarios.SalvarNoArquivo();
+                    return $"Email alterado de {auxEmail} para {cal.novoEmail}.";
                 }
                 else
                 {
@@ -241,7 +250,7 @@ namespace SistemaLocacao
                 Locacao atualizaLocacao = baseLocacoes.BuscarLocacaoPorContrato(calo.idLocacao);
                 atualizaLocacao.SetTempoContrato(calo.tempoContrato);
                 atualizaLocacao.SetDataLocacao(calo.novaDataContrato);
-                baseLocacoes.SalvarNoArquivo(); 
+                baseLocacoes.SalvarNoArquivo();
 
                 return $"Contrato de locação {atualizaLocacao.GetId()} extendido por {calo.tempoContrato} meses à partir de {calo.novaDataContrato}.";
             });

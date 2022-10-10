@@ -1,1 +1,6 @@
-638003982419610869,União da Vitoria,84,Sobrado 3,Barreirinha,Curitiba,PR,Gustavo,3000.00,não
+638009901725702850,União da Vitoria,84,Sobrado 3,Barreirinha,Curitiba,PR,Gustavo,3000.00,não
+638009901797060354,Pedro Moreira Cardoso,150,Bloco C Apto 5,Xaxim,Curitiba,PR,Carol,1000.00,não
+638009901866879671,Doutor Arielly Soares da Silva,72,Sobrado 3,Boqueirao,Curitiba,PR,Antonio,1500.00,não
+638009901936593037,Doutor Arielly Soares da Silva,72,Sobrado 4,Boqueirao,Curitiba,PR,Antonio,1500.00,sim
+638009902011841803,Doutor Arielly Soares da Silva,72,Sobrado 5,Boqueirao,Curitiba,PR,Antonio,1500.00,não
+638009902072875474,Vicente Machado,1050, ,Centro,Curitiba,PR,Mateus,8300.00,não

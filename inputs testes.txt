@@ -1,4 +1,13 @@
-Cadastro de Locatario - https://localhost:7027/locatario/cadastrar
+Excluir bancos de dados 
+
+LIMPA banco locatario - /locatario/limparbanco
+
+LIMPA banco imoveis - /imovel/limparbanco
+
+LIMPA banco locacoes - /locacao/limparbanco
+
+
+Cadastro de Locatario - /locatario/cadastrar
 
 {
   "nome": "Tadeu",
@@ -25,7 +34,7 @@ Cadastro de Locatario - https://localhost:7027/locatario/cadastrar
 }
 
 
-Cadastro de Imoveis - https://localhost:7027/imovel/cadastrar
+Cadastro de Imoveis - /imovel/cadastrar
 
 {
     "endereco": "União da Vitoria",
@@ -85,7 +94,7 @@ Cadastro de Imoveis - https://localhost:7027/imovel/cadastrar
 {
     "endereco": "Vicente Machado",
     "numero": "1050",
-    "complemento": " ",
+    "complemento": "Sala 1509",
     "bairro": "Centro",
     "cidade": "Curitiba",
     "uf": "PR",
@@ -93,7 +102,7 @@ Cadastro de Imoveis - https://localhost:7027/imovel/cadastrar
     "valorAluguel": "8300.00"
 }
 
-Cadastro Locação - https://localhost:7027/locacao/cadastrar
+Cadastro Locação - /locacao/cadastrar
 
 {
   "idImovel" : [VERFICAR APÓS CADASTRO DE IMOVEL],
@@ -134,26 +143,26 @@ Cadastro Locação - https://localhost:7027/locacao/cadastrar
 READ:
 
 - GET locatarios: 
-https://localhost:7027/locatario/lista
-https://localhost:7027/locatario/buscar/tadeu@email.com
+/locatario/lista
+/locatario/buscar/tadeu@email.com
 
 - GET imoveis
-https://localhost:7027/imovel/lista
-https://localhost:7027/imovel/buscar/Antonio
+/imovel/lista
+/imovel/buscar/Antonio
 
 - GET locacoes
-https://localhost:7027/locacao/lista
+/locacao/lista
 
 - GET locacao por ID locacao
-https://localhost:7027/locacao/buscar1/[VERIFICAR ID DE LOCACÃO]
+/locacao/buscar1/[VERIFICAR ID DE LOCACÃO]
 
 - GET locacao por ID locatario
-https://localhost:7027/locacao/buscar2/[VERIFICAR ID DE LOCATARIO]
+/locacao/buscar2/[VERIFICAR ID DE LOCATARIO]
 
 - GET locacao por ID imovel
-https://localhost:7027/locacao/buscar3/[VERIFICAR ID DE IMOVEL]
+/locacao/buscar3/[VERIFICAR ID DE IMOVEL]
 
-UPDATE de nome ou email do locatario no banco de dados - https://localhost:7027/locatario/atualiza/dados
+UPDATE de nome ou email do locatario no banco de dados - /locatario/atualiza/dados
 
 {
   "email" : "marcos@email.com",
@@ -165,14 +174,20 @@ UPDATE de nome ou email do locatario no banco de dados - https://localhost:7027/
   "novoEmail": "tadeuzinho@email.com"
 }
 
-UPDATE de senha do locatario no banco de dados - https://localhost:7027/locatario/atualiza/senha
+{
+   "email" : "alex@email.com",
+   "novoNome": "Alexsandro",
+   "novoEmail": "alexsandro@email.com"
+}
+
+UPDATE de senha do locatario no banco de dados - /locatario/atualiza/senha
 
 {
   "email" : "marcos@email.com",
   "novaSenha": "64564645"
 }
 
-UPDATE de valor de aluguel ou novo proprietario do imóvel -  https://localhost:7027/imovel/atualiza/dados
+UPDATE de valor de aluguel ou novo proprietario do imóvel -  /imovel/atualiza/dados
 
 {
   "idImovel" : [VERIFICAR ID DE IMOVEL],
@@ -184,7 +199,7 @@ UPDATE de valor de aluguel ou novo proprietario do imóvel -  https://localhost:
   "novoAluguel" : "1900.00"
 }
 
-UPDATE de tempo de locação e atualização da data de vigência - https://localhost:7027/locacao/atualiza/tempocontrato
+UPDATE de tempo de locação e atualização da data de vigência - /locacao/atualiza/tempocontrato
 
 {
   "idLocacao" : [VERIFICAR ID DE LOCACÃO],
@@ -194,14 +209,10 @@ UPDATE de tempo de locação e atualização da data de vigência - https://loca
 
 DELETE: 
 
-DELETE locatario por email: https://localhost:7027/locatario/excluir/jango@email.com
+DELETE locatario por email: /locatario/excluir/jango@email.com
 
-DELETE imovel por ID do imovel: https://localhost:7027/imovel/excluir/[VERIFICAR ID DE IMOVEL]
+DELETE imovel por ID do imovel: /imovel/excluir/[VERIFICAR ID DE IMOVEL]
 
-DELETE locacao por ID do locacao: https://localhost:7027/imovel/excluir/[VERIFICAR ID DE LOCACÃO]
+DELETE locacao por ID do locacao: /imovel/excluir/[VERIFICAR ID DE LOCACÃO]
 
-LIMPA banco locatario - https://localhost:7027/locatario/limparbanco
 
-LIMPA banco imoveis - https://localhost:7027/imovel/limparbanco
-
-LIMPA banco locacoes - https://localhost:7027/locacao/limparbanco

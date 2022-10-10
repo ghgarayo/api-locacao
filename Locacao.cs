@@ -153,6 +153,7 @@ namespace SistemaLocacao
 
         public Locacao BuscarLocacaoPorLocatario(long idLocatario)
         {
+            
             foreach (var locacao in locacoes)
             {
                 if (idLocatario == locacao.GetIdLocatario())
@@ -172,7 +173,7 @@ namespace SistemaLocacao
                     return locacao;
                 }
             }
-            throw new Exception($"Imóvel '{idImovel}' não foi encontrado na base");
+            throw new Exception($"Imóvel '{idImovel}' não foi encontrado na base de locações. Disponível para locação");
         }
 
         public void RemoverLocacao(Locacao l)
